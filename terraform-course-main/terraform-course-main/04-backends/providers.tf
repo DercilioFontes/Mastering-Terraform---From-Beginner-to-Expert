@@ -12,12 +12,12 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "terraform-course-lauromueller-remote-backend"
+    bucket = "terraform-course-dafdev-remote-backend"
     key    = "04-backends/state.tfstate"
-    region = "eu-west-1"
+    region = "us-east-2"
   }
 }
 
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-2"
 }
